@@ -1,0 +1,172 @@
+
+
+* { 
+    margin: 0px;
+    padding: 0%;
+}
+
+body {
+    background-image: url(./image.html/logins.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 30px;
+    width: 500px;
+}
+
+h1 {
+    font-size: 80px;
+    font-style: italic;
+    color: rgb(200, 188, 188);
+    background-color: brown;
+    text-align: center;
+    width:100%;
+
+}
+
+input {
+    background-image: none;
+    font-size: 20px;
+    padding: 3px 50px 3px 50px;
+    margin-bottom: 10px;
+    cursor: text;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 300px; /* Default width for input */
+}
+
+img {
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.box {
+    outline: none;
+    padding: 4px 30px 0px 40px;
+}
+
+#btn {
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 250px;
+    border: 3px solid purple;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: white;
+    background-color: black;
+}
+
+#btn:focus {
+    color: wheat;
+    background-color: purple;
+}
+
+#comment {
+    font-weight: 300;
+    padding-left: 250px;
+    padding-top: 140px;
+    border-radius: 30px;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Media query to reduce the form width and input width */
+@media (max-width: 500px)   and (min-width: 400px){
+    form {
+        width: 350px;
+    }
+    input {
+        width: 250px; /* Adjust input width when screen is small */
+    } #comment{
+        padding-left: 200px;
+        padding-top: 100px;
+    }
+    #btn{
+        padding-left: 120px;
+        padding-right: 220px;
+    }
+}
+@media (max-width: 400px) {
+    form {
+        width: 350px;
+    }
+    input {
+        width: 250px; /* Adjust input width when screen is small */
+    }
+    #comment{
+        padding-left: 180px;
+        padding-top: 80px;
+    }
+    #btn{
+        padding-left: 110px;
+        padding-right: 210px;
+    }
+}
+@media (max-width: 375px) {
+    form {
+        width: 300px;
+    }
+    input {
+        width: 200px; /* Adjust input width when screen is small */
+    } #comment{
+        padding-left: 130px;
+        padding-top: 70px;
+    }  #btn{
+        padding-left: 90px;
+        padding-right: 190px;
+    }
+
+}@media (max-width: 300px) {
+    form {
+        width: 280px;
+    }
+    input {
+        width: 120px; /* Adjust input width when screen is small */
+    }
+    #comment{
+        padding-left: 80px;
+        padding-top: 70px;
+    }  #btn{
+        padding-left: 60px;
+        padding-right: 160px;
+    }
+
+}
+@media (max-width: 290px) {
+    form {
+        width: 230px;
+    }
+    input {
+        width: 120px; /* Adjust input width when screen is small */
+    }
+    #comment{
+        padding-left: 80px;
+        padding-top: 70px;
+    }
+    #btn{
+        padding-left: 20px;
+    }#btn{
+        padding-left: 40px;
+        padding-right: 140px;
+    }
+
+}
+

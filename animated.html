@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+   <h1  class="animate__animated animate__bounce animate__slow animate__slow animate__bounce"> hello   world</h1>
+   <form action=""    method="get">
+    username:<input type="text" name="uername:" size="40"maxlenght="30" required>
+    <a href="">
+      <button>click me</button>
+    </a>
+  </form>
+
+</body>
+</html>
+<!-- bounce
+flash
+pulse
+rubberBand
+shakeX
+shakeY
+headShake
+swing
+tada
+wobble
+jello
+heartBeat
+Back entrances
+backInDown
+backInLeft
+backInRight
+backInUp
+Back exits
+backOutDown
+backOutLeft
+backOutRight
+backOutUp
+Bouncing entrances
+bounceIn
+bounceInDown
+bounceInLeft
+bounceInRight
+bounceInUp
+Bouncing exits
+bounceOut
+bounceOutDown
+bounceOutLeft
+bounceOutRight
+bounceOutUp
+Fading entrances
+fadeIn
+fadeInDown
+fadeInDownBig
+fadeInLeft
+fadeInLeftBig
+fadeInRight
+fadeInRightBig
+fadeInUp
+fadeInUpBig
+fadeInTopLeft
+fadeInTopRight
+fadeInBottomLeft
+fadeInBottomRight
+Fading exits
+fadeOut
+fadeOutDown
+fadeOutDownBig
+fadeOutLeft
+fadeOutLeftBig
+fadeOutRight
+fadeOutRightBig
+fadeOutUp
+fadeOutUpBig
+fadeOutTopLeft
+fadeOutTopRight
+fadeOutBottomRight
+fadeOutBottomLeft
+Flippers
+flip
+flipInX
+flipInY
+flipOutX
+flipOutY
+Lightspeed
+lightSpeedInRight
+lightSpeedInLeft
+lightSpeedOutRight
+lightSpeedOutLeft
+Rotating entrances
+rotateIn
+rotateInDownLeft
+rotateInDownRight
+rotateInUpLeft
+rotateInUpRight
+Rotating exits
+rotateOut
+rotateOutDownLeft
+rotateOutDownRight
+rotateOutUpLeft
+rotateOutUpRight
+Specials
+hinge
+jackInTheBox
+rollIn
+rollOut
+Zooming entrances
+zoomIn
+zoomInDown
+zoomInLeft
+zoomInRight
+zoomInUp
+Zooming exits
+zoomOut
+zoomOutDown
+zoomOutLeft
+zoomOutRight
+zoomOutUp
+Sliding entrances
+slideInDown
+slideInLeft
+slideInRight
+slideInUp
+Sliding exits
+slideOutDown
+slideOutLeft
+slideOutRight
+slideOutUp
+Another thing from Daniel Eden and friends
+
+Documentation -->
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Carousel images ka size adjust karne ke liye */
+.carousel-inner {
+  border-radius: 30px;
+  height: 500px;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+}
+
+/* Buttons ki styling */
+.btn {
+  margin-top: 20px;
+  padding: 3px 80px;
+}
+
+#supercontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#book {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile-specific Media Query (for screens <= 608px) */
+@media (max-width: 608px) {
+  /* Carousel image height adjustment for mobile */
+  .carousel-inner {
+      height: 300px;
+  }
+
+  /* Buttons are full width and aligned center */
+  .btn {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  /* Book section adjusts images */
+  #book {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #book img {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+  }
+
+  /* Adjusting carousel caption */
+  .carousel-caption {
+      bottom: 30px;
+  }
+
+  /* Make heading smaller */
+  h1 {
+      font-size: 40px; /* Reduce font size for mobile */
+      text-align: center;
+      margin: 0;
+  }
+
+  /* Reduce caption text size */
+  .carousel-caption h5,
+  .carousel-caption p {
+      font-size: 14px;
+  }
+
+  /* Ensure that book images do not overlap */
+  #book a {
+      margin-bottom: 20px;
+  }
+}
+
+/* For larger screens (laptop and above) */
+@media (min-width: 609px) {
+  h1 {
+      font-style: italic;
+      font-size: 120px;
+      color: blue;
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  .carousel-inner {
+      height: 500px;
+  }
+
+  .btn {
+      margin-left: 20px;
+      padding: 3px 80px;
+  }
+
+  /* Row layout for books */
+  #book {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+  }
+
+  #book img {
+      width: 300px;
+      height: 200px;
+      border-radius: 30px;
+  }
+
+  /* Center the buttons */
+  .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+  }
+}
